@@ -1,0 +1,4 @@
+NB_results.txt
+SVM_results.txt
+ngram_results_numeric.txt
+pcfg_results_numeric.txt

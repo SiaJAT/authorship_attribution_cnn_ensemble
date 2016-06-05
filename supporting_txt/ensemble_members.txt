@@ -1,0 +1,6 @@
+NB_results.txt
+SVM_results.txt
+ngram_results_numeric.txt
+CNN_WORD2VEC_baseline.txt
+CNN_GLOVE_baseline.txt
+pcfg_results_numeric.txt

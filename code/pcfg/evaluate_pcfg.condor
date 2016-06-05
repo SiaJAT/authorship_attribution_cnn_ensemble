@@ -1,0 +1,22 @@
+universe = vanilla
+STANFORD_PATH=/scratch/cluster/rcorona/388/final/stanford-parser
+environment = CLASSPATH=$(STANFORD_PATH):$(STANFORD_PATH)/slf4j-1.7.21/slf4j-api1.7.21.jar
+
+
+Initialdir = $(STANFORD_PATH)
+Executable = /usr/bin/java
+
++Group = "UNDER"
++Project = "INSTRUCTIONAL"
++ProjectDescription = "CS388 Final Project"
+
+Log = $(LOGS).log
+
+Notification = complete
+Notify_user = rcorona@utexas.edu
+
+Arguments = Parser388 test $(TEST_DOC) $(PARSER) $(RESULTS)
+
+Output = $(LOGS).out
+Error = $(LOGS).err
+Queue 1
